@@ -35,8 +35,15 @@ export class Player {
    restart() {
       this.x = 0
       this.y = this.game.height - this.height
-      this.maxFrames = 8
-      this.frameY = 0
+      this.game.collisions = []
+      this.frameY = 5
+      this.maxFrames = 4
+      this.game.lives = 5
+
+      for(let i = 0; i < this.states.length; i++) {
+         this.setStates(0, this.speed)
+      }
+
    }
    update(input, deltaTime) {
 

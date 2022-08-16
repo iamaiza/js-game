@@ -132,16 +132,16 @@ window.addEventListener("load", () => {
         }
 
         restartGame() {
-            game.player.restart()
-            game.background.restart()
-            game.score = 0
-            game.time = 0
-            game.enemies = []
-            game.particles = []
-            game.collisions = []
-            game.floatingMessages = []
-            game.gameOver = false
-    
+            this.player.restart()
+            this.background.restart()
+            this.score = 0
+            this.time = 0
+            this.enemies = []
+            this.collisions = []
+            this.particles = []
+            this.floatingMessages = []
+            this.gameOver = false
+
             animation(0)
         }
     }

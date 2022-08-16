@@ -9,15 +9,12 @@ window.addEventListener("load", () => {
 
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
-    // const backdrop = document.querySelector('.backdrop')
-    // const modal = document.querySelector('.modal')
-    // const playBtn = document.getElementById('play')
+   
 
     canvas.width = 1395;
     canvas.height = 698;
 
     class Game {
-        // It will construct the player, enemies and etc.
         constructor(width, height) {
             this.width = width;
             this.height = height;
@@ -47,7 +44,6 @@ window.addEventListener("load", () => {
             this.player.currentState.enter();
         }
 
-        // it will update the player and enemies movements
         update(deltaTime) {
             this.time += deltaTime
             if (this.time > this.maxTime) {
@@ -96,7 +92,6 @@ window.addEventListener("load", () => {
 
         }
 
-        // it will display the player and enemies on screen
         draw(ctx) {
             this.background.draw(ctx);
             this.player.draw(ctx);

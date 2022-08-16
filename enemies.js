@@ -62,9 +62,6 @@ export class FlyingEnemies extends Enemy {
         this.y += Math.sin(this.angle)
     }
 
-    // draw(ctx) {
-    //     super.draw(ctx)
-    // }
 }
 
 export class GroundEnemies extends Enemy {

@@ -9,52 +9,8 @@ body {
     font-family: 'Creepster', cursive;
 }
 
-.d-none {
-    display: none;
-}
-
-.backdrop {
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 100;
-}
-.modal {
-    background-color: #fff;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 200;
-    width: 400px;
-    /* height: 200px; */
-    padding: 2rem 0;
-}
-
-.modal * {
-    margin: 1% 0;
-}
-
-.modal h2 {
-    font-size: 50px;
-}
-
-.modal button {
-    background-color: rgb(253, 216, 7);
-    font-size: 1.1rem;
-    padding: 2% 5%;
-}
-
-.modal button:active {
-    transform: scale(0.90);
-}
-
 canvas {
-    /* background-color: grey; */
+    background-color: grey;
     border: 5px solid grey;
     position: absolute;
     top: 50%;

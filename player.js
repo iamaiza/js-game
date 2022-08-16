@@ -79,7 +79,6 @@ export class Player {
       else {
          this.frameTimer += deltaTime
       }
-      // if(input.includes('Escape')) this.game.restartGame(deltaTime)
    }
 
    draw(ctx) {
